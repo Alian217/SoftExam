@@ -1,0 +1,91 @@
+<START1>
+设float a=2, b=4, c=3；以下C语言表达式与代数式 (a+b)+c计算结果不一致的是
+A.(a+b)*c/2
+B.(1/2)*(a+b)*c
+C.(a+b)*c*1/2
+D.c/2*(a+b)
+<END1>
+参考答案：B，因为a,b,c三个变量都是浮点数，所以在B答案中其结果是0，
+因为在计算1/2是就是0，如果改成1/2.0就正确了。
+<ANS1>
+<START1>
+为了向二进制文件尾部增加数据，打开文件的方式应采用
+A.″ab″
+B.″rb+″
+C.″wb″
+D.″wb+″
+<END1>
+参考答案：D
+<ANS1>
+<START1>
+下述程序执行后的输出结果是
+#include <stdio.h>
+main() 
+{ 
+    int x='f'; 
+    printf("%c\n",'a'+(x-'a'+1)); 
+}
+A.g
+B.h
+C.i
+D.j
+<END1>
+参考答案：A
+<ANS1> 
+<START1>
+4:C语言中，下列运算符优先级最高的是 
+A.！ 
+B.％ 
+C.>> 
+D.＝ ＝ 
+<END1>
+参考答案：A
+<ANS1> 
+<START1>
+5:数组定义为“ int a [ 4 ] ; ”，表达式 ( ) 是错误的。 
+A.*a 
+B.a [ 0 ] 
+C.a 
+D.a++ 
+<END1>
+参考答案：D
+<ANS1> 
+<START1>
+6:执行语句“ k=7>>1; ”后，变量 k 的当前值是 
+A.15 
+B.31 
+C.3 
+D.1 
+<END1>
+参考答案：C
+<ANS1> 
+<START1>
+7:定义函数时，缺省函数的类型声明，则函数类型取缺省类型 
+A.void 
+B.char 
+C.float 
+D.int 
+<END1>
+参考答案：D
+<ANS1> 
+<START1>
+8:若main（）函数带参数，参数个数最多是 
+A.0 
+B.1 
+C.2 
+D.3 
+<END1>
+参考答案：C 只知道有定义形式main(int argc,char* argv[])）
+<ANS1> 
+<START1>
+9:若有宏定义：#define MOD(x，y) x％y
+则执行以下语句后的输出结果是
+int a=13，b=94；
+printf(″％d\n″，MOD(b，a+4))； 
+A.5 
+B.7 
+C.9 
+D.11 
+<END1>
+参考答案：B
+<ANS1> 

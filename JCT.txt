@@ -1,0 +1,437 @@
+9.
+<START>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+9.
+<START>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+9.
+<START>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+9.
+<START>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+9.
+<START>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+9.
+<START>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+9.
+<START>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+9.
+<START>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 
+10.
+<START>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+<END>
+<ANSWER> 1：
+<START>用C语言实现大小端的测试
+   Int CheckCpu()
+      {
+union
+{
+int a;
+char b;
+}c;
+c.a=1;
+if(c.b==1)
+printf(“小端”)；
+else printf（“大端”）；
+}
+<END>
+<ANSWER> 
+2.
+<START>下面x, y, *p的值是多少，有什么问题？(2分) 
+int x, y, z = 2; 
+int *p=&z; 
+x=sizeof*p; 
+y=x/*p; /* x=?, *p=?, y=?, 有什么问题？*/ 
+<END>
+<ANSWER> 
+3.
+<START>下面的语句是什么意思？如何声明或定义才使它们更易懂？(10分) 
+int (*foo())(); 
+int (*foo())[]; 
+int (*foo[])(); 
+(*(void(*)())0)(); 
+void (*signal(int,void(*)(int)))(int); 
+<END>
+<ANSWER> 
+4.
+<START>一般使用malloc时，需要进行强制类型转换，如： 
+char *s; s = (char *)malloc(31); 
+下面中???该如何填写，才可以正确执行强制类型转换？ 
+int (*monthp)[31]; monthp = (???)malloc(31); 
+<END>
+<ANSWER> 
+5.
+<START>关于C语言运算符优先级的记忆技巧是什么？(2分) 
+/* 下面r的值是多少 */ 
+int hi, low, r; 
+hi=7;low=3; 
+r=hi<<4+low; 
+<END>
+<ANSWER> 
+6.
+<START>任意给出一个C的基本数据类型，如何编码判断这个数据类型是有符号还是无符号的？(2 
+  
+分) 
+不得上机实验，写出下面代码的输出。解释这个行为是标准定义的，还是依赖实现的。( 
+  
+2分) 
+int i; 
+for (i = 0; i < 10; i++) { 
+int j = i; 
+printf ("%d/n", j); 
+} 
+<END>
+<ANSWER> 
+7.
+<START>下面x, y的值是多少，有什么问题？ 
+int x = 10, y = 3; 
+x ^= y; 
+y ^= x; 
+x ^= y; 
+/* x=?, y = ? */ 
+<END>
+<ANSWER> 
+8.
+<START>请问以下代码有什么问题：
+int  main() { char a; char *str=&a; strcpy(str,”hello”); printf(str); return 0; }
+<END>
+答案：没有为str分配内存空间，将会发生异常问题出在将一个字符串复制进一个字符变量指针所指地址。虽然可以正确输出结果，但因为越界进行内在读写而导致程序崩溃。
+<ANSWER> 
+9.
+<START>
+1.请问下面程序有什么错误?   
+int a[60][250][1000],i,j,k;   
+for(k=0;k <=1000;k++)   
+for(j=0;j <250;j++)     
+for(i=0;i <60;i++)     
+a[i][j][k]=0;
+<END>
+<ANSWER> 
+10.
+<START>请找出下面代码中的所以错误说明：以下代码是把一个字符串倒序，
+如”abcd”倒序后变为”dcba”
+1、＃include”string.h”
+2、main()
+3、{
+4、 char*src=”hello,world”;
+5、 char* dest=NULL;
+6、 int len=strlen(src);
+7、 dest=(char*)malloc(len);
+8、 char* d=dest;
+9、 char* s=src[len];
+10、 while(len–!=0)
+11、 d++=s–;
+12、 printf(“%s”,dest);
+13、 return 0;
+14、}
+<END>
+<ANSWER> 
+11.
+<START>下面x, y的值是多少，有什么问题？ 
+int x = 10, y = 3; 
+x ^= y; 
+y ^= x; 
+x ^= y; 
+/* x=?, y = ? */ 
+<END>
+<ANSWER> 
+1：
+<START>用C语言实现大小端的测试
+   Int CheckCpu()
+      {
+union
+{
+int a;
+char b;
+}c;
+c.a=1;
+if(c.b==1)
+printf(“小端”)；
+else printf（“大端”）；
+}
+<END>
+<ANSWER> 
+2.
+<START>下面x, y, *p的值是多少，有什么问题？(2分) 
+int x, y, z = 2; 
+int *p=&z; 
+x=sizeof*p; 
+y=x/*p; /* x=?, *p=?, y=?, 有什么问题？*/ 
+<END>
+<ANSWER> 
+3.
+<START>下面的语句是什么意思？如何声明或定义才使它们更易懂？(10分) 
+int (*foo())(); 
+int (*foo())[]; 
+int (*foo[])(); 
+(*(void(*)())0)(); 
+void (*signal(int,void(*)(int)))(int); 
+<END>
+<ANSWER> 
+4.
+<START>一般使用malloc时，需要进行强制类型转换，如： 
+char *s; s = (char *)malloc(31); 
+下面中???该如何填写，才可以正确执行强制类型转换？ 
+int (*monthp)[31]; monthp = (???)malloc(31); 
+<END>
+<ANSWER> 
+5.
+<START>关于C语言运算符优先级的记忆技巧是什么？(2分) 
+/* 下面r的值是多少 */ 
+int hi, low, r; 
+hi=7;low=3; 
+r=hi<<4+low; 
+<END>
+<ANSWER> 
+6.
+<START>任意给出一个C的基本数据类型，如何编码判断这个数据类型是有符号还是无符号的？(2 
+  
+分) 
+不得上机实验，写出下面代码的输出。解释这个行为是标准定义的，还是依赖实现的。( 
+  
+2分) 
+int i; 
+for (i = 0; i < 10; i++) { 
+int j = i; 
+printf ("%d/n", j); 
+} 
+<END>
+<ANSWER> 
+7.
+<START>下面x, y的值是多少，有什么问题？ 
+int x = 10, y = 3; 
+x ^= y; 
+y ^= x; 
+x ^= y; 
+/* x=?, y = ? */ 
+<END>
+<ANSWER> 
+8.
+<START>请问以下代码有什么问题：
+int  main() { char a; char *str=&a; strcpy(str,”hello”); printf(str); return 0; }
+<END>
+答案：没有为str分配内存空间，将会发生异常问题出在将一个字符串复制进一个字符变量指针所指地址。虽然可以正确输出结果，但因为越界进行内在读写而导致程序崩溃。
+<ANSWER> 
+9.
+<START>
+1.请问下面程序有什么错误?   
+int a[60][250][1000],i,j,k;   
+for(k=0;k <=1000;k++)   
+for(j=0;j <250;j++)     
+for(i=0;i <60;i++)     
+a[i][j][k]=0;
+<END>
+<ANSWER> 
+10.
+<START>请找出下面代码中的所以错误说明：以下代码是把一个字符串倒序，
+如”abcd”倒序后变为”dcba”
+1、＃include”string.h”
+2、main()
+3、{
+4、 char*src=”hello,world”;
+5、 char* dest=NULL;
+6、 int len=strlen(src);
+7、 dest=(char*)malloc(len);
+8、 char* d=dest;
+9、 char* s=src[len];
+10、 while(len–!=0)
+11、 d++=s–;
+12、 printf(“%s”,dest);
+13、 return 0;
+14、}
+<END>
+<ANSWER> 
+11.
+<START>下面x, y的值是多少，有什么问题？ 
+int x = 10, y = 3; 
+x ^= y; 
+y ^= x; 
+x ^= y; 
+/* x=?, y = ? */ 
+<END>
+<ANSWER> 
+
+1：
+<START>用C语言实现大小端的测试
+   Int CheckCpu()
+      {
+union
+{
+int a;
+char b;
+}c;
+c.a=1;
+if(c.b==1)
+printf(“小端”)；
+else printf（“大端”）；
+}
+<END>
+<ANSWER> 
+2.
+<START>下面x, y, *p的值是多少，有什么问题？(2分) 
+int x, y, z = 2; 
+int *p=&z; 
+x=sizeof*p; 
+y=x/*p; /* x=?, *p=?, y=?, 有什么问题？*/ 
+<END>
+<ANSWER> 
+3.
+<START>下面的语句是什么意思？如何声明或定义才使它们更易懂？(10分) 
+int (*foo())(); 
+int (*foo())[]; 
+int (*foo[])(); 
+(*(void(*)())0)(); 
+void (*signal(int,void(*)(int)))(int); 
+<END>
+<ANSWER> 
+4.
+<START>一般使用malloc时，需要进行强制类型转换，如： 
+char *s; s = (char *)malloc(31); 
+下面中???该如何填写，才可以正确执行强制类型转换？ 
+int (*monthp)[31]; monthp = (???)malloc(31); 
+<END>
+<ANSWER> 
+5.
+<START>关于C语言运算符优先级的记忆技巧是什么？(2分) 
+/* 下面r的值是多少 */ 
+int hi, low, r; 
+hi=7;low=3; 
+r=hi<<4+low; 
+<END>
+<ANSWER> 
+6.
+<START>任意给出一个C的基本数据类型，如何编码判断这个数据类型是有符号还是无符号的？(2 
+  
+分) 
+不得上机实验，写出下面代码的输出。解释这个行为是标准定义的，还是依赖实现的。( 
+  
+2分) 
+int i; 
+for (i = 0; i < 10; i++) { 
+int j = i; 
+printf ("%d/n", j); 
+} 
+<END>
+<ANSWER> 
+7.
+<START>下面x, y的值是多少，有什么问题？ 
+int x = 10, y = 3; 
+x ^= y; 
+y ^= x; 
+x ^= y; 
+/* x=?, y = ? */ 
+<END>
+<ANSWER> 
+8.
+<START>请问以下代码有什么问题：
+int  main() { char a; char *str=&a; strcpy(str,”hello”); printf(str); return 0; }
+<END>
+答案：没有为str分配内存空间，将会发生异常问题出在将一个字符串复制进一个字符变量指针所指地址。虽然可以正确输出结果，但因为越界进行内在读写而导致程序崩溃。
+<ANSWER> 
+
+

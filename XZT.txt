@@ -1,0 +1,305 @@
+1
+<START>设float a=2, b=4, <START1>c=3；以下C语言表<END1达式<END1与代<ANS1>数式 (a+b)+c计算结果不一致的是
+A.(a+b)*c/2
+B.(1/2)*(a+b)*c
+C.(a+b)*c*1/2
+D.c/2*(a+b)
+<END>
+参考答案：B，因为a,b,c三个变量都是浮点数，所以在B答案中其结果是0，
+因为在计算1/2是就是0，如果改成1/2.0就正确了。
+<ANSWER>
+2
+<START>
+为了向二进制文件尾部增加数据，打开文件的方式应采用
+A.″ab″
+B.″rb+″
+C.″wb″
+D.″wb+″
+<END>
+参考答案：D
+<ANSWER>
+3
+<START>
+
+下述程序执行后的输出结果是
+#include <stdio.h>
+main() 
+{ 
+    int x='f'; 
+    printf("%c\n",'a'+(x-'a'+1)); 
+}
+A.g
+B.h
+C.i
+D.j
+<END>
+参考答案：A
+<ANSWER>
+4
+<START>
+
+C语言中，下列运算符优先级最高的是 
+A.！ 
+B.％ 
+C.>> 
+D.＝ ＝ 
+<END>
+参考答案：A
+<ANSWER>
+5
+<START>
+test5
+
+数组定义为“ int a [ 4 ] ; ”，表达式 ( ) 是错误的。 
+A.*a 
+B.a [ 0 ] 
+C.a 
+D.a++ 
+<END>
+参考答案：D
+<ANSWER>
+6
+<START>执行语句“ k=7>>1; ”后，变量 k 的当前值是 
+A.15 
+B.31 
+C.3 
+D.1 
+<END>
+参考答案：C
+<ANSWER>
+7:
+<START>定义函数时，缺省函数的类型声明，则函数类型取缺省类型 
+A.void 
+B.char 
+C.float 
+D.int 
+<END>
+参考答案：D
+<ANSWER>
+8:
+<START>若main（）函数带参数，参数个数最多是 
+A.0 
+B.1 
+C.2 
+D.3 
+<END>
+参考答案：C 只知道有定义形式main(int argc,char* argv[])）
+<ANSWER>
+9:
+<START>若有宏定义：#define MOD(x，y) x％y
+则执行以下语句后的输出结果是
+int a=13，b=94；
+printf(″％d\n″，MOD(b，a+4))； 
+A.5 
+B.7 
+C.9 
+D.11 
+<END>
+参考答案：B
+<ANSWER>
+10:
+<START>下列各个错误中，哪一个不属于编译错误 
+A.改变 x 原值 3 为 5 ，写作“ x==5 ;” 
+B.花括号不配对 
+C.复合语句中的最后一条语句后未加分号 
+D.变量有引用、无定义 
+<END>
+参考答案：A
+<ANSWER>
+11.
+<START>下列程序段运行后， x 的值是( ) 
+a=1;b=2;x=0; 
+if(!( --a))
+    x--; 
+if(!b)
+    x=7;
+else ++x; 
+A.0 
+B.3 
+C.6 
+D.7 
+<END>
+参考答案：A
+<ANSWER>
+12:
+<START>设
+#define N 3
+#define Y(n) ((N+1)*n)
+则表达式2*(N+Y(5+1))的值是 
+A.42 
+B.48 
+C.54 
+D.出错 
+<END>
+参考答案：B Y(5+1) 传递过去的应该是6，而不是简单的把5+1给替换掉
+<ANSWER>
+13:
+<START>若定义了char ch[]={″abc\0def″｝，*p=ch;则执行printf(″%c″,*p+4);语句的输出结果是 
+A.def 
+B.d 
+C.e 
+D.0 
+<END>
+参考答案：C
+<ANSWER>
+14:
+<START>下列转义字符中错误的是 
+A.′\000′ 
+B.′\14′ 
+C.′\x111′ 
+D.′\2′ 
+<END>
+参考答案：C error C2022: '273' : too big for character
+<ANSWER>
+15:
+<START>算术运算符，赋值运算符和关系运算符的运算优先级按从高到低依次为 
+A.算术运算、赋值运算、关系运算 
+B.算术运算、关系运算、赋值运算 
+C.关系运算、赋值运算、算术运算 
+D.关系运算、算术运算、赋值运算 
+<END>
+参考答案：B
+<ANSWER>
+16:
+<START>设#define N 3 
+#define Y(n) ((N+1)*n) 
+则表达式2*(N+Y(5+1))的值是 
+A.42 
+B.48 
+C.54 
+D.出错 
+<END>
+参考答案：B
+<ANSWER>
+17:
+<START>表达式 strcmp( “ 3.14 ”，“ 3.278 ” ) 的值是一个 
+A.非零整数 
+B.浮点数 
+C.0 
+D.字符 
+<END>
+参考答案： A
+<ANSWER>
+18:
+<START>设struct 
+{ short a; 
+char b; 
+float c; 
+}cs; 
+则sizeof(cs)的值是 
+A.4 
+B.5 
+C.6 
+D.7 
+<END>
+参考答案： D 字节对齐的话应该是8
+<ANSWER>
+19:
+<START>若变量已正确定义，表达式( j=3 ， j++ )的值是 
+A.3 
+B.4 
+C.5 
+D.0 
+<END>
+参考答案：A
+<ANSWER>
+20:
+<START>C 语言中运算对象必须是整型的运算符是 
+A.% 
+B./ 
+C.! 
+D.** 
+<END>
+参考答案：A
+<ANSWER>
+21.
+<START>设float a=2, b=4, <START1>c=3；以下C语言表<END1达式<END1与代<ANS1>数式 (a+b)+c计算结果不一致的是
+A.(a+b)*c/2
+B.(1/2)*(a+b)*c
+C.(a+b)*c*1/2
+D.c/2*(a+b)
+<END>
+参考答案：B，因为a,b,c三个变量都是浮点数，所以在B答案中其结果是0，
+因为在计算1/2是就是0，如果改成1/2.0就正确了。
+<ANSWER>
+22.
+<START>为了向二进制文件尾部增加数据，打开文件的方式应采用
+A.″ab″
+B.″rb+″
+C.″wb″
+D.″wb+″
+<END>
+参考答案：D
+<ANSWER>
+23.
+<START>下述程序执行后的输出结果是
+#include <stdio.h>
+main() 
+{ 
+    int x='f'; 
+    printf("%c\n",'a'+(x-'a'+1)); 
+}
+A.g
+B.h
+C.i
+D.j
+<END>
+参考答案：A
+<ANSWER>
+24:
+<START>C语言中，下列运算符优先级最高的是 
+A.！ 
+B.％ 
+C.>> 
+D.＝ ＝ 
+<END>
+参考答案：A
+<ANSWER>
+25:
+<START>数组定义为“ int a [ 4 ] ; ”，表达式 ( ) 是错误的。 
+A.*a 
+B.a [ 0 ] 
+C.a 
+D.a++ 
+<END>
+参考答案：D
+<ANSWER>
+26:
+<START>执行语句“ k=7>>1; ”后，变量 k 的当前值是 
+A.15 
+B.31 
+C.3 
+D.1 
+<END>
+参考答案：C
+<ANSWER>
+27:
+<START>定义函数时，缺省函数的类型声明，则函数类型取缺省类型 
+A.void 
+B.char 
+C.float 
+D.int 
+<END>
+参考答案：D
+<ANSWER>
+28:
+<START>若main（）函数带参数，参数个数最多是 
+A.0 
+B.1 
+C.2 
+D.3 
+<END>
+参考答案：C 只知道有定义形式main(int argc,char* argv[])）
+<ANSWER>
+29:
+<START>若有宏定义：#define MOD(x，y) x％y
+则执行以下语句后的输出结果是
+int a=13，b=94；
+printf(″％d\n″，MOD(b，a+4))； 
+A.5 
+B.7 
+C.9 
+D.11 
+<END>
+参考答案：B
+<ANSWER>

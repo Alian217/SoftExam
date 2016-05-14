@@ -1,0 +1,167 @@
+1.
+<START>编写一个字符串复制函数：strcpy（const char *str，const char *str1）
+<END>
+         void strcpy(const *char str,const chat *str1)
+            {
+               if(*str1==’\0’) return;
+char *sp1,*sp2;
+sp1= str;
+sp2=str1;
+while(*sp2!=’\0’)
+{
+*sp1=sp2;
+sp1++;
+sp2++;
+}
+}
+<ANSWER>
+2.
+<START>编写一个函数实现字符串翻转 void rechange（char *str）
+<END>
+           void rechange（char *str）
+               {
+Int len；
+char t；
+len=strlen（str）；
+for（int i=0；len/2；i++）
+{
+t=str[i];
+str[i]=str[len-i-1];
+str[len-i-1]=t;
+}
+}
+<ANSWER>
+3.
+<START>编写一个函数实现字符串比较 int strcmp（char *str1，char *str2）,相等返回1，不相等返回0：
+<END>   
+int strcmp（char *str1，char *str2）
+{
+if（*str1==‘\0’||*str2==’\0’） return;
+while(*str1！=’\0’&&*str2！=’\0’&&*str1==*str2)
+{
+str1++；
+str2++；
+}
+if(*str1==*str2)
+return 1;
+else return 0;
+}
+}
+<ANSWER>
+4.
+<START>编写一个字符串复制函数：strcpy（const char *str，const char *str1）
+<END>
+         void strcpy(const *char str,const chat *str1)
+            {
+               if(*str1==’\0’) return;
+char *sp1,*sp2;
+sp1= str;
+sp2=str1;
+while(*sp2!=’\0’)
+{
+*sp1=sp2;
+sp1++;
+sp2++;
+}
+}
+<ANSWER>
+5.
+<START>编写一个函数实现字符串翻转 void rechange（char *str）
+<END>
+           void rechange（char *str）
+               {
+Int len；
+char t；
+len=strlen（str）；
+for（int i=0；len/2；i++）
+{
+t=str[i];
+str[i]=str[len-i-1];
+str[len-i-1]=t;
+}
+}
+<ANSWER>
+6.
+<START>编写一个函数实现字符串比较 int strcmp（char *str1，char *str2）,相等返回1，不相等返回0：
+<END>
+   int strcmp（char *str1，char *str2）
+{
+if（*str1==‘\0’||*str2==’\0’） return;
+while(*str1！=’\0’&&*str2！=’\0’&&*str1==*str2)
+{
+str1++；
+str2++；
+}
+if(*str1==*str2)
+return 1;
+else return 0;
+}
+}
+<ANSWER>
+7.
+<START>编写一个字符串复制函数：strcpy（const char *str，const char *str1）
+<END>
+         void strcpy(const *char str,const chat *str1)
+            {
+               if(*str1==’\0’) return;
+char *sp1,*sp2;
+sp1= str;
+sp2=str1;
+while(*sp2!=’\0’)
+{
+*sp1=sp2;
+sp1++;
+sp2++;
+}
+}
+<ANSWER>
+8.
+<START>编写一个函数实现字符串翻转 void rechange（char *str）
+<END>
+           void rechange（char *str）
+               {
+Int len；
+char t；
+len=strlen（str）；
+for（int i=0；len/2；i++）
+{
+t=str[i];
+str[i]=str[len-i-1];
+str[len-i-1]=t;
+}
+}
+<ANSWER>
+9.
+<START>编写一个函数实现字符串比较 int strcmp（char *str1，char *str2）,相等返回1，不相等返回0：
+<END>
+   int strcmp（char *str1，char *str2）
+{
+if（*str1==‘\0’||*str2==’\0’） return;
+while(*str1！=’\0’&&*str2！=’\0’&&*str1==*str2)
+{
+str1++；
+str2++；
+}
+if(*str1==*str2)
+return 1;
+else return 0;
+}
+}
+<ANSWER>
+10.
+<START>编写一个字符串复制函数：strcpy（const char *str，const char *str1）
+<END>
+         void strcpy(const *char str,const chat *str1)
+            {
+               if(*str1==’\0’) return;
+char *sp1,*sp2;
+sp1= str;
+sp2=str1;
+while(*sp2!=’\0’)
+{
+*sp1=sp2;
+sp1++;
+sp2++;
+}
+}
+<ANSWER>
