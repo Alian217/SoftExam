@@ -4,9 +4,9 @@
 
 #pragma once
 
-#define SUM_XZT   20
-#define SUM_TKT   10
-#define SUM_JDT   2
+#define SUM_XZT   10
+#define SUM_TKT   5
+#define SUM_JDT   3
 #define SUM_JCT   2
 #define SUM_BCT   2
 #define MAX_XZT   200

@@ -836,7 +836,7 @@ int CSoftExamDlg::CreateExam( P_RANDNUM pRandNum, P_TITLE_ASWER pTleAsw )
 			nWDataAnswerlen += strlen(cTempNum);
 
 			//过滤掉开始的连续的换行键
-			TOOL_IgnoreChar( pTleAsw->szXZTTitle[(pRandNum->XZT[iCnt])], strlen(pTleAsw->szXZTTitle[(pRandNum->XZT[iCnt])]), 0x0A, STRING_BEGIN );
+			TOOL_IgnoreChar( pTleAsw->szTKTTitle[(pRandNum->TKT[iCnt])], strlen(pTleAsw->szTKTTitle[(pRandNum->TKT[iCnt])]), 0x0A, STRING_BEGIN );
 
 			//题目
 			memcpy( cWDataBuf+nWDataLen, pTleAsw->szTKTTitle[(pRandNum->TKT[iCnt])], strlen(pTleAsw->szTKTTitle[(pRandNum->TKT[iCnt])]) );
@@ -879,7 +879,7 @@ int CSoftExamDlg::CreateExam( P_RANDNUM pRandNum, P_TITLE_ASWER pTleAsw )
 			nWDataAnswerlen += strlen(cTempNum);
 
 			//过滤掉开始的连续的换行键
-			TOOL_IgnoreChar( pTleAsw->szXZTTitle[(pRandNum->XZT[iCnt])], strlen(pTleAsw->szXZTTitle[(pRandNum->XZT[iCnt])]), 0x0A, STRING_BEGIN );
+			TOOL_IgnoreChar( pTleAsw->szJDTTitle[(pRandNum->JDT[iCnt])], strlen(pTleAsw->szJDTTitle[(pRandNum->JDT[iCnt])]), 0x0A, STRING_BEGIN );
 
 			//题目
 			memcpy( cWDataBuf+nWDataLen, pTleAsw->szJDTTitle[(pRandNum->JDT[iCnt])], strlen(pTleAsw->szJDTTitle[(pRandNum->JDT[iCnt])]) );
@@ -929,7 +929,7 @@ int CSoftExamDlg::CreateExam( P_RANDNUM pRandNum, P_TITLE_ASWER pTleAsw )
 			nWDataAnswerlen += strlen(cTempNum);
 
 			//过滤掉开始的连续的换行键
-			TOOL_IgnoreChar( pTleAsw->szXZTTitle[(pRandNum->XZT[iCnt])], strlen(pTleAsw->szXZTTitle[(pRandNum->XZT[iCnt])]), 0x0A, STRING_BEGIN );
+			TOOL_IgnoreChar( pTleAsw->szJCTTitle[(pRandNum->JCT[iCnt])], strlen(pTleAsw->szJCTTitle[(pRandNum->JCT[iCnt])]), 0x0A, STRING_BEGIN );
 
 			//题目
 			memcpy( cWDataBuf+nWDataLen, pTleAsw->szJCTTitle[(pRandNum->JCT[iCnt])], strlen(pTleAsw->szJCTTitle[(pRandNum->JCT[iCnt])]) );
@@ -978,7 +978,7 @@ int CSoftExamDlg::CreateExam( P_RANDNUM pRandNum, P_TITLE_ASWER pTleAsw )
 			nWDataAnswerlen += strlen(cTempNum);
 
 			//过滤掉开始的连续的换行键
-			TOOL_IgnoreChar( pTleAsw->szXZTTitle[(pRandNum->XZT[iCnt])], strlen(pTleAsw->szXZTTitle[(pRandNum->XZT[iCnt])]), 0x0A, STRING_BEGIN );
+			TOOL_IgnoreChar( pTleAsw->szBCTTitle[(pRandNum->BCT[iCnt])], strlen(pTleAsw->szBCTTitle[(pRandNum->BCT[iCnt])]), 0x0A, STRING_BEGIN );
 
 			//题目
 			memcpy( cWDataBuf+nWDataLen, pTleAsw->szBCTTitle[(pRandNum->BCT[iCnt])], strlen(pTleAsw->szBCTTitle[(pRandNum->BCT[iCnt])]) );

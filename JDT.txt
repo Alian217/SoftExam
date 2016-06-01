@@ -1,40 +1,116 @@
-1、 
-<START>如何在C中初始化一个字符数组。
-<END>
+1
+<START>
+#include <stdio.h>
+
+void main() 
+{ 
+    int c; 
+　　while ((c=getchar())!= '\n') 
+　　switch(c - '2 ' ) 
+　　{ 
+    case 0: 
+　　case 1:putchar(c+4);break; 
+　　case 2:putchar(c+4);break; 
+　　case 3:putchar(c+3);break; 
+　　default:putchar(c+2);break; 
+
+　　} 
+　　printf( ″\ n ″ ); 
+} 
+运行时输入：2473 ，输出结果
+<END> 
+参考答案：6897
 <ANSWER> 
-2、 
-<START>如何在C中为一个数组分配空间。
+2
+<START>
+写一语句实现x是否为2的若干次幂的判断。 
 <END>
+参考答案：!(X)&(X-1)
 <ANSWER> 
-3、 
-<START>如何初始化一个指针数组。
+3 
+<START>
+执行下述程序的输出结果是:
+#include <stdio.h>
+char b[]="ABCDEF"; 
+main() 
+{ 
+    char *bp; 
+    for(bp=b;*bp;bp+=2) 
+   {
+        printf("%s",bp);
+    } 
+    printf("\n"); 
+} 
 <END>
+输出结果为: ABCDEFCDEFEF  
 <ANSWER> 
-4、 
-<START>如何定义一个有10个元素的整数型指针数组。
+4
+<START>
+已知一个数组table，用一个宏定义，求出数据的元素个数。
 <END>
+参考答案: #define NTBL (sizeof(table)/sizeof(table[0]))
 <ANSWER> 
-5、  
-<START>s[10]的另外一种表达方式是什么。
+5
+<START>
+写一个“标准”宏MIN，这个宏输入两个参数并返回较小的一个
 <END>
+#define MIN(A,B) ((A)<=(B)?(A):(B))
 <ANSWER> 
-6、  
-<START>GCC3.2.2版本中支持哪几种编程语言。
+6
+<START>
+下面的声明都是什么意思？
+const int a; 
+int const a; 
+const int *a; 
+int * const a; 
+int const * a const;
 <END>
+1,2 前两个的作用是一样，a是一个常整型数。
+3 意味着a是一个指向常整型数的指针（也就是，整型数是不可修改的，但指针可以）
+4 意思a是一个指向整型数的常指针（也就是说，指针指向的整型数是可以修改的，但指针是不可修改的）
+5 意味着a是一个指向常整型数的常指针（也就是说，指针指向的整型数是不可修改的，同时指针也是不可修改的）。
 <ANSWER> 
-7、  
-<START>要使用CHAR_BIT需要包含哪个头文件。
+7
+<START>
+下面的代码输出是什么，为什么？
+void foo(void) 
+{ 
+    unsigned int a = 6; 
+    int b = -20; 
+    (a+b>6)?puts(">6"):puts("<=6"); 
+}
 <END>
+答案是输出是“>6”,原因是当表达式中存在有符号类型和无符号类型时所有的操作数都自动转换为无符号类型。
+因此-20变成了一个非常大的正整数，所以该表达式计算出的结果大于6。
 <ANSWER> 
-8、  
-<START>对(-1.2345)取整是多少？ 
+8
+<START>
+写出float，bool，int类型与零的比较，假设变量为X： 
 <END>
+Int ：    if（x==0）
+Float：   if（x>0.0000001&&x<0.0000001）
+Bool:     if(x==false)
 <ANSWER> 
 9、 
-<START>如何让局部变量具有全局生命期。 
+<START>
+进程和线程的区别：
 <END>
+1：调度：线程作为调度和分配的基本单元，进程作为拥有资源的基本单位；
+2：并发性：不仅进程可以并发执行，同一进程内的线程也可以并发执行。
+3：拥有资源：进程是拥有资源的基本独立单元，线程不拥有资源，但可以访问进程内的资源；
+4：在创建或撤销线程时，由于系统都要为之分配和回收内存资源，导致系统的开销明显大于创建或撤销线程时的开销。
 <ANSWER> 
 10、
-<START>C中的常量字符串应在何时定义？ 
+<START>
+请写出strcpy 和 memcpy 的区别
 <END>
+1、strcpy和memcpy都是标准C库函数。
+2、strcpy提供了字符串的复制。即strcpy只用于字符串复制，并且它不仅复制字符串内容之外，还会复制字符串的结束符。
+3、strcpy函数的原型是：char* strcpy(char* dest, const char* src);
+4、memcpy提供了一般内存的复制。即memcpy对于需要复制的内容没有限制，因此用途更广。
+5、memcpy函数的原型是：void *memcpy( void *dest, const void *src, size_t count );
+   strcpy和memcpy主要有以下3方面的区别。
+5.1、复制的内容不同。strcpy只能复制字符串，而memcpy可以复制任意内容，例如字符数组、整型、结构体、类等。
+5.2、复制的方法不同。strcpy不需要指定长度，它遇到被复制字符的串结束符"\0"才结束，所以容易溢出。memcpy则是根据其第3个参数决定复制的长度。
+5.3、用途不同。通常在复制字符串时用strcpy，而需要复制其他类型数据时则一般用memcpy
 <ANSWER> 

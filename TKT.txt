@@ -1,120 +1,60 @@
 1. 
-<START>在Linux系统中，以 文件 方式访问设备 。
-<END><ANSWER>
-2. 
-<START>Linux内核引导时，从文件 /etc/fstab 中读取要加载的文件系统。
-<END><ANSWER>
+<START>
+在Linux系统中，以_______方式访问设备 。
+<END>
+ 文件 
+<ANSWER>
+2.
+<START>
+Linux文件系统中每个文件用________来标识。
+<END>
+ i节点 
+<ANSWER>
 3. 
-<START>Linux文件系统中每个文件用 i节点 来标识。
-<END><ANSWER>
+<START>
+某文件的权限为：d-rw-_r--_r--，用数值形式表示该权限，则该八进制数为:________，该文件属性是_______。
+<END>
+ 644,  目录 
+<ANSWER>
 4. 
-<START>全部磁盘块由四个部分组成，分别为引导块 、专用块 、 i节点表块 和数据存储块。
-<END><ANSWER>
+<START>
+前台起动的进程使用________快捷键进行终止。
+<END>
+ Ctrl+c 
+<ANSWER>
 5. 
-<START>链接分为： 硬链接 和 符号链接 。
-<END><ANSWER>
+<START>
+编写的Shell程序运行前必须赋予该脚本文件________权限。
+<END>
+ 执行 
+<ANSWER>
 6. 
-<START>超级块包含了i节点表 和 空闲块表 等重要的文件系统信息。
-<END><ANSWER>
+<START>
+vi编辑器具有两种工作模式： ________ 和 ________。
+<END>
+命令模式， 输入模式
+<ANSWER>
 7. 
-<START>某文件的权限为：d-rw-_r--_r--，用数值形式表示该权限，则该八进制数为： 644 ，该文件属性是 目录 。
-<END><ANSWER>
+<START>
+进程与程序的区别在于其动态性，动态的产生和终止，从产生到终止进程可以具有的基本状态为： _______ 、 _______ 和 _______ 。
+<END>
+ 运行态 、 就绪态 和 等待态（阻塞态）
+<ANSWER> 
 8. 
-<START>前台起动的进程使用 Ctrl+c 终止。
-<END><ANSWER>
+<START>
+在Linux系统中，用来存放系统所需要的配置文件和子目录的目录是________ 。
+<END>
+  /etc
+<ANSWER> 
 9. 
-<START>静态路由设定后，若网络拓扑结构发生变化，需由系统管理员修改路由的设置。
-<END><ANSWER>
+<START>
+结束后台进程的命令是__________ 。
+<END>
+ kill
+<ANSWER> 
 10. 
-<START>网络管理的重要任务是： 控制 和 监控 。
-<END><ANSWER>
-11. 
-<START>安装Linux系统对硬盘分区时，必须有两种分区类型： 文件系统分区 和 交换分区 。
-<END><ANSWER>
-12. 
-<START>编写的Shell程序运行前必须赋予该脚本文件 执行 权限。
-<END><ANSWER>
-13. 
-<START>编写的Shell程序运行前必须赋予该脚本文件 执行 权限。
-<END><ANSWER>
-14. 
-<START>系统管理的任务之一是能够在 分布式 环境中实现对程序和数据的安全保护、备份、恢复和更新。 
-<END><ANSWER>
-15. 
-<START>系统交换分区是作为系统 虚拟存储器 的一块区域。
-<END><ANSWER>
-16. 
-<START>内核分为 进程管理系统 、 内存管理系统 、 I/O管理系统 和文件管理系统 等四个子系统。
-<END><ANSWER>
-17. 
-<START>内核配置是系统管理员在改变系统配置 硬件 时要进行的重要操作。
-<END><ANSWER>
-18. 
-<START>在安装Linux系统中，使用netconfig程序对网络进行配置，该安装程序会一步步提示用户输入主机名、域名、域名服务器、IP地址、 网关地址 和 子网掩码 等必要信息。
-<END><ANSWER>
-19. 
-<START>唯一标识每一个用户的是用户 ID 和用户名。
-<END><ANSWER>
-20 . 
-<START>RIP 协议是最为普遍的一种内部协议，一般称为动态路由信息协议。
-<END><ANSWER>
-1. 
-<START>在Linux系统中，以 文件 方式访问设备 。
-<END><ANSWER>
-2. 
-<START>Linux内核引导时，从文件 /etc/fstab 中读取要加载的文件系统。
-<END><ANSWER>
-3. 
-<START>Linux文件系统中每个文件用 i节点 来标识。
-<END><ANSWER>
-4. 
-<START>全部磁盘块由四个部分组成，分别为引导块 、专用块 、 i节点表块 和数据存储块。
-<END><ANSWER>
-5. 
-<START>链接分为： 硬链接 和 符号链接 。
-<END><ANSWER>
-6. 
-<START>超级块包含了i节点表 和 空闲块表 等重要的文件系统信息。
-<END><ANSWER>
-7. 
-<START>某文件的权限为：d-rw-_r--_r--，用数值形式表示该权限，则该八进制数为： 644 ，该文件属性是 目录 。
-<END><ANSWER>
-8. 
-<START>前台起动的进程使用 Ctrl+c 终止。
-<END><ANSWER>
-9. 
-<START>静态路由设定后，若网络拓扑结构发生变化，需由系统管理员修改路由的设置。
-<END><ANSWER>
-10. 
-<START>网络管理的重要任务是： 控制 和 监控 。
-<END><ANSWER>
-11. 
-<START>安装Linux系统对硬盘分区时，必须有两种分区类型： 文件系统分区 和 交换分区 。
-<END><ANSWER>
-12. 
-<START>编写的Shell程序运行前必须赋予该脚本文件 执行 权限。
-<END><ANSWER>
-13. 
-<START>编写的Shell程序运行前必须赋予该脚本文件 执行 权限。
-<END><ANSWER>
-14. 
-<START>系统管理的任务之一是能够在 分布式 环境中实现对程序和数据的安全保护、备份、恢复和更新。 
-<END><ANSWER>
-15. 
-<START>系统交换分区是作为系统 虚拟存储器 的一块区域。
-<END><ANSWER>
-16. 
-<START>内核分为 进程管理系统 、 内存管理系统 、 I/O管理系统 和文件管理系统 等四个子系统。
-<END><ANSWER>
-17. 
-<START>内核配置是系统管理员在改变系统配置 硬件 时要进行的重要操作。
-<END><ANSWER>
-18. 
-<START>在安装Linux系统中，使用netconfig程序对网络进行配置，该安装程序会一步步提示用户输入主机名、域名、域名服务器、IP地址、 网关地址 和 子网掩码 等必要信息。
-<END><ANSWER>
-19. 
-<START>唯一标识每一个用户的是用户 ID 和用户名。
-<END><ANSWER>
-20 . 
-<START>RIP 协议是最为普遍的一种内部协议，一般称为动态路由信息协议。
-<END><ANSWER>
+<START>
+为脚本程序指定执行权的命令及参数是________________ 。
+<END>
+chmod a+x filename
+<ANSWER>  
